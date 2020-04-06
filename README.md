@@ -11,7 +11,7 @@ TaiCoL MariaDB docker
 1. put xxx.sql.gz in /[project-path]/mariadb
 2. build docker image
 
-```
+```console
 docker-compose build
 ```
 
@@ -31,3 +31,12 @@ maybe wait 10 minutes for database initialization.
 1. delete folder: /[project-path]/data
 2. change xxx.sql.gz to yyy.sql.gz
 3. run docker build and up again
+
+# Scripts
+
+## dump taiwan species
+
+```console
+docker-compose exec db bash
+./dump-taiwan-species-csv.sh
+```
