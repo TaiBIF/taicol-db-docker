@@ -11,8 +11,8 @@ services:
       MYSQL_DATABASE: taicol
       MYSQL_ROOT_PASSWORD: example
     volumes:
-      - ./data:/var/lib/mysql
-      #- ./data:/tmp
+      - ../taicol-volumes/data:/var/lib/mysql
+      - ./output:/taicol-code/output
 
   adminer:
     image: adminer
