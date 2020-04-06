@@ -1,7 +1,7 @@
 FROM mariadb:10.3
 
 # import data
-COPY *.sql.gz /docker-entrypoint-initdb.d/
+COPY *.gz /docker-entrypoint-initdb.d/
 
 WORKDIR /taicol-code/
 COPY scripts/* ./
