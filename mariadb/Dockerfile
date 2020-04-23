@@ -4,4 +4,4 @@ FROM mariadb:10.3
 COPY *.gz /docker-entrypoint-initdb.d/
 
 WORKDIR /taicol-code/
-COPY scripts/* ./
+#COPY scripts/* ./

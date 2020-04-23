@@ -38,5 +38,8 @@ maybe wait 10 minutes for database initialization.
 
 ```console
 docker-compose exec db bash
-./dump-taiwan-species-csv.sh
+./scripts/dump-taiwan-species.sh
 ```
+
+- have to type password: ```example``` (twice for dump 2 files)
+- will create 2 files in ```output``` folder
