@@ -13,7 +13,7 @@ services:
     volumes:
       - ../taicol-volumes/data:/var/lib/mysql
       - ./output:/taicol-code/output
-
+      - ./scripts:/taicol-code/scripts
   adminer:
     image: adminer
     restart: always
